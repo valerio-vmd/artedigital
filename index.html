@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Websites, landing pages, aplicativos e identidade visual. Conheça o Digital Studio e solicite seu orçamento pelo WhatsApp.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Digital Studio — Web, Apps & Artes Gráficas">
+  <meta property="og:description" content="Design e desenvolvimento para sua presença digital. Fale sobre seu projeto pelo WhatsApp.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/quote-form.js" defer></script>
+  <script src="assets/js/particles.js" defer></script>
+  <title>Digital Studio — Web, Apps & Artes Gráficas</title>
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Google Fonts (Inter como substituto direto de PPNeueMontreal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-void text-bone-white antialiased selection:bg-electric-iris selection:text-white overflow-x-hidden">
+
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- Canvas do Fundo da Constellation Globo -->
+  <div class="fixed inset-0 pointer-events-none z-0">
+    <canvas id="constellationCanvas" aria-hidden="true"></canvas>
+  </div>
+
+  <!-- CONTAINER PRINCIPAL -->
+  <div class="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-12">
+
+    <!-- NAVIGATION BAR -->
+    <header class="flex items-center justify-between py-6 sm:py-8 md:py-12 border-b border-white/5">
+      <!-- Logo Lockup -->
+      <a href="#" class="flex items-center gap-3 group">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300 group-hover:scale-110">
+          <polygon points="12,2 22,21 2,21" fill="#8052ff" />
+          <polygon points="12,7 19,19 5,19" fill="#15846e" opacity="0.6" />
+        </svg>
+        <span class="font-normal text-lg sm:text-xl tracking-tight text-bone-white">STUDIO<span class="text-saffron-spark">.</span></span>
+      </a>
+
+      <!-- Nav Links Center (Desktop) -->
+      <nav aria-label="Navegação principal" class="hidden md:flex items-center gap-8">
+        <a href="#servicos" class="link-ghost">Serviços</a>
+        <a href="#portfolio" class="link-ghost">Portfólio</a>
+        <a href="#sobre" class="link-ghost">Sobre</a>
+        <a href="#orcamento" class="link-ghost">Calculadora</a>
+      </nav>
+
+      <!-- Action CTA Right -->
+      <a href="https://wa.me/5524988038079?text=Ol%C3%A1!%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20falar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" class="btn-iris text-xs sm:text-sm py-3 px-5 sm:py-3.5 sm:px-7">
+        <i class="fa-brands fa-whatsapp text-base"></i>
+        <span>Contato</span>
+      </a>
+    </header>
+
+    <main id="conteudo">
+    <!-- HERO SECTION (Otimizada para Celular/Instagram e com Globo no Topo) -->
+    <section class="min-h-[85vh] sm:min-h-[90vh] flex flex-col justify-start pt-32 sm:pt-40 md:pt-48 pb-12 relative text-center md:text-left">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+        
+        <!-- Left/Main Headline + Body -->
+        <div class="md:col-span-8 space-y-6 sm:space-y-8">
+          <div class="inline-block">
+            <span class="text-saffron-spark text-xs sm:text-sm font-semibold tracking-wider uppercase font-sans bg-saffron-spark/10 px-3 py-1 rounded-full border border-saffron-spark/20">
+              • DESIGN & ENGENHARIA DIGITAL
+            </span>
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-[90px] display-title font-normal text-bone-white tracking-tight leading-none">
+            Engenharia web. <br>
+            <span class="text-ash-gray">Design sem limites.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg md:text-xl body-light max-w-xl text-silver-mist mx-auto md:mx-0">
+            Desenvolvo websites de alto impacto, aplicativos intuitivos e identidades visuais marcantes para elevar sua marca no mercado.
+          </p>
+
+          <div class="pt-2 sm:pt-4 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+            <a href="https://wa.me/5524988038079?text=Ol%C3%A1!%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-iris w-full sm:w-auto py-4 px-8 text-sm">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              Falar no WhatsApp
+            </a>
+
+            <a href="#portfolio" class="text-ash-gray hover:text-bone-white text-xs sm:text-sm uppercase tracking-wider font-semibold transition-colors flex items-center justify-center gap-2 py-3 px-4 w-full sm:w-auto">
+              Ver Projetos
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Mini Stats / Highlight Card -->
+        <div class="md:col-span-4 flex flex-col justify-end space-y-6 pt-4 md:pt-0">
+          <div class="p-6 sm:p-8 rounded-24px bg-void/60 backdrop-blur-md border border-white/10 text-left space-y-4 sm:space-y-6">
+            <div class="text-saffron-spark text-xs font-semibold uppercase tracking-widest">Diferencial</div>
+            <div class="text-lg sm:text-xl md:text-2xl font-normal tracking-tight text-bone-white leading-snug">
+              Velocidade extrema, estética refinada e código de alta performance.
+            </div>
+            <div class="pt-4 border-t border-white/10 flex justify-between items-center text-xs text-ash-gray">
+              <span>STATUS</span>
+              <span class="text-emerald-400 flex items-center gap-2 font-medium">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Disponível para novos projetos
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PILARES / SERVIÇOS SECTION -->
+    <section id="servicos" class="py-24 space-y-20">
+      
+      <!-- Section Header -->
+      <div class="max-w-2xl space-y-4">
+        <span class="text-saffron-spark text-sm font-semibold uppercase tracking-wider">O QUE FAÇO</span>
+        <h2 class="text-4xl md:text-6xl heading-lg text-bone-white">
+          Soluções completas para a sua presença digital.
+        </h2>
+      </div>
+
+      <!-- Services Grid (Floating Layout without cards borders) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+        
+        <!-- Service 1: Web -->
+        <div class="space-y-6 group">
+          <div class="w-12 h-12 rounded-full bg-electric-iris/10 flex items-center justify-center text-electric-iris text-xl group-hover:bg-electric-iris group-hover:text-white transition-all duration-300">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <span class="text-xs text-saffron-spark font-mono tracking-widest uppercase block">01 / WEB DESIGN & DEV</span>
+          <h3 class="text-2xl md:text-3xl font-normal text-bone-white tracking-tight">
+            Websites & E-commerce
+          </h3>
+          <p class="body-muted text-base">
+            Sites institucionais, landing pages de alta conversão, e-commerces e plataformas web personalizadas. Design ultra responsivo, otimizado para SEO e com carregamento instantâneo.
+          </p>
+          <ul class="space-y-2 text-sm text-ash-gray pt-2 font-light">
+            <li class="flex items-center gap-2"><span class="text-electric-iris">•</span> Landing Pages de Alta Conversão</li>
+            <li class="flex items-center gap-2"><span class="text-electric-iris">•</span> Portfólios e Sites Institucionais</li>
+            <li class="flex items-center gap-2"><span class="text-electric-iris">•</span> Sistemas Web Interativos (SaaS)</li>
+          </ul>
+        </div>
+
+        <!-- Service 2: Apps -->
+        <div class="space-y-6 group">
+          <div class="w-12 h-12 rounded-full bg-electric-iris/10 flex items-center justify-center text-electric-iris text-xl group-hover:bg-electric-iris group-hover:text-white transition-all duration-300">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <span class="text-xs text-saffron-spark font-mono tracking-widest uppercase block">02 / MOBILE APPS</span>
+          <h3 class="text-2xl md:text-3xl font-normal text-bone-white tracking-tight">
+            Aplicativos iOS & Android
+          </h3>
+          <p class="body-muted text-base">
+            Criação de aplicativos nativos e híbridos focados na melhor experiência de usuário (UI/UX). Soluções fluidas, escaláveis e integradas com APIs modernas.
+          </p>
+          <ul class="space-y-2 text-sm text-ash-gray pt-2 font-light">
+            <li class="flex items-center gap-2"><span class="text-electric-iris">•</span> Apps para iOS e Android</li>
+            <li class="flex items-center gap-2"><span class="text-electric-iris">•</span> Design de Interfaces (UI/UX)</li>
+            <li class="flex items-center gap-2"><span class="text-electric-iris">•</span> Protótipos Interativos</li>
+          </ul>
+        </div>
+
+        <!-- Service 3: Graphic Arts & Branding -->
+        <div class="space-y-6 group">
+          <div class="w-12 h-12 rounded-full bg-electric-iris/10 flex items-center justify-center text-electric-iris text-xl group-hover:bg-electric-iris group-hover:text-white transition-all duration-300">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <span class="text-xs text-saffron-spark font-mono tracking-widest uppercase block">03 / BRANDING & DESIGN</span>
+          <h3 class="text-2xl md:text-3xl font-normal text-bone-white tracking-tight">
+            Artes Gráficas & Identidade
+          </h3>
+          <p class="body-muted text-base">
+            Construção de marcas fortes e memoráveis. Desenvolvimento de logotipos, manuais de marca, artes para redes sociais e materiais gráficos para impressão.
+          </p>
+          <ul class="space-y-2 text-sm text-ash-gray pt-2 font-light">
+            <li class="flex items-center gap-2"><span class="text-electric-iris">•</span> Identidade Visual Completa</li>
+            <li class="flex items-center gap-2"><span class="text-electric-iris">•</span> Social Media & Kit Digital</li>
+            <li class="flex items-center gap-2"><span class="text-electric-iris">•</span> Material Gráfico & Embalagens</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO DE PROJETOS -->
+    <section id="portfolio" class="py-24 space-y-16">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <div class="space-y-4 max-w-xl">
+          <span class="text-saffron-spark text-sm font-semibold uppercase tracking-wider">PORTFÓLIO EM DESTAQUE</span>
+          <h2 class="text-4xl md:text-6xl heading-lg text-bone-white">
+            Projetos recentes.
+          </h2>
+        </div>
+        <p class="body-muted max-w-sm">
+          Cada projeto é desenvolvido de forma única, alinhando estética vanguardista com funcionalidades robustas.
+        </p>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        
+        <!-- Project 1 -->
+        <div class="space-y-6 group">
+          <div class="overflow-hidden rounded-24px bg-neutral-950 aspect-[16/10] relative">
+            <!-- Canvas Placeholder / Mock SVG -->
+            <div class="absolute inset-0 bg-gradient-to-br from-indigo-950/40 to-black flex items-center justify-center p-8 group-hover:scale-105 transition-transform duration-700">
+              <div class="text-center space-y-3">
+                <i class="fa-solid fa-globe text-5xl text-electric-iris opacity-80"></i>
+                <div class="text-xl font-light tracking-wide">Plataforma Web SaaS</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xs text-electric-iris font-semibold uppercase tracking-widest">WEBSITE & DASHBOARD</span>
+              <h3 class="text-2xl font-normal text-bone-white mt-1">Aethel AI Dashboard</h3>
+            </div>
+            <a href="https://wa.me/5524988038079?text=Gostei%20do%20projeto%20Aethel%20AI%20e%20quero%20algo%20parecido." target="_blank" aria-label="Conversar sobre este projeto no WhatsApp" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-ash-gray hover:text-white hover:border-electric-iris hover:bg-electric-iris transition-all" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="space-y-6 group">
+          <div class="overflow-hidden rounded-24px bg-neutral-950 aspect-[16/10] relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-950/40 to-black flex items-center justify-center p-8 group-hover:scale-105 transition-transform duration-700">
+              <div class="text-center space-y-3">
+                <i class="fa-solid fa-mobile-screen text-5xl text-saffron-spark opacity-80"></i>
+                <div class="text-xl font-light tracking-wide">App Mobile iOS / Android</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xs text-saffron-spark font-semibold uppercase tracking-widest">APLICATIVO MOBILE</span>
+              <h3 class="text-2xl font-normal text-bone-white mt-1">Fintech Mobile Wallet</h3>
+            </div>
+            <a href="https://wa.me/5524988038079?text=Gostei%20do%20projeto%20Fintech%20App%20e%20quero%20desenvolver%20um%20aplicativo." target="_blank" aria-label="Conversar sobre este projeto no WhatsApp" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-ash-gray hover:text-white hover:border-electric-iris hover:bg-electric-iris transition-all" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="space-y-6 group">
+          <div class="overflow-hidden rounded-24px bg-neutral-950 aspect-[16/10] relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-teal-950/40 to-black flex items-center justify-center p-8 group-hover:scale-105 transition-transform duration-700">
+              <div class="text-center space-y-3">
+                <i class="fa-solid fa-wand-magic-sparkles text-5xl text-deep-verdant opacity-80"></i>
+                <div class="text-xl font-light tracking-wide">Identidade Visual & Branding</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xs text-emerald-400 font-semibold uppercase tracking-widest">BRANDING & REBRANDING</span>
+              <h3 class="text-2xl font-normal text-bone-white mt-1">Lumina Brand Identity</h3>
+            </div>
+            <a href="https://wa.me/5524988038079?text=Quero%20criar%20uma%20identidade%20visual%20para%20minha%20empresa." target="_blank" aria-label="Conversar sobre este projeto no WhatsApp" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-ash-gray hover:text-white hover:border-electric-iris hover:bg-electric-iris transition-all" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="space-y-6 group">
+          <div class="overflow-hidden rounded-24px bg-neutral-950 aspect-[16/10] relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-rose-950/40 to-black flex items-center justify-center p-8 group-hover:scale-105 transition-transform duration-700">
+              <div class="text-center space-y-3">
+                <i class="fa-solid fa-store text-5xl text-rose-500 opacity-80"></i>
+                <div class="text-xl font-light tracking-wide">E-commerce Ultra Rápido</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xs text-rose-400 font-semibold uppercase tracking-widest">E-COMMERCE HIGH-END</span>
+              <h3 class="text-2xl font-normal text-bone-white mt-1">Verve Fashion Store</h3>
+            </div>
+            <a href="https://wa.me/5524988038079?text=Quero%20um%20e-commerce%20de%20alta%20performance." target="_blank" aria-label="Conversar sobre este projeto no WhatsApp" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-ash-gray hover:text-white hover:border-electric-iris hover:bg-electric-iris transition-all" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SOBRE O PROFISSIONAL / METODOLOGIA -->
+    <section id="sobre" class="py-24 border-t border-white/10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-saffron-spark text-sm font-semibold uppercase tracking-wider">FILOSOFIA & PROCESSO</span>
+          <h2 class="text-4xl md:text-5xl heading-sm text-bone-white">
+            Design minimalista, foco total na experiência.
+          </h2>
+          <p class="body-muted">
+            Acredito que o design não deve apenas ser bonito, mas funcionar de forma impecável. Minha metodologia elimina ruídos desnecessários para focar no que realmente importa: resultados reais e engajamento do seu público.
+          </p>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-3">
+            <span class="text-electric-iris text-2xl font-normal font-mono">01.</span>
+            <h4 class="text-xl text-bone-white font-normal">Imersão & Estratégia</h4>
+            <p class="text-sm text-ash-gray font-light">
+              Entendimento profundo dos seus objetivos de negócio, público-alvo e posicionamento no mercado.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <span class="text-electric-iris text-2xl font-normal font-mono">02.</span>
+            <h4 class="text-xl text-bone-white font-normal">Prototipagem UI/UX</h4>
+            <p class="text-sm text-ash-gray font-light">
+              Criação de fluxos e layouts intuitivos com validação visual antes do desenvolvimento.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <span class="text-electric-iris text-2xl font-normal font-mono">03.</span>
+            <h4 class="text-xl text-bone-white font-normal">Desenvolvimento Clean</h4>
+            <p class="text-sm text-ash-gray font-light">
+              Código moderno, otimizado para motores de busca e extremamente leve para máxima velocidade.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <span class="text-electric-iris text-2xl font-normal font-mono">04.</span>
+            <h4 class="text-xl text-bone-white font-normal">Lançamento & Suporte</h4>
+            <p class="text-sm text-ash-gray font-light">
+              Publicação orientada e acompanhamento pós-lançamento para garantir estabilidade contínua.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALCULADORA / SIMULADOR DE ORÇAMENTO RÁPIDO -->
+    <section id="orcamento" class="py-16 sm:py-24">
+      <div class="p-6 sm:p-12 md:p-16 rounded-24px bg-neutral-950 border border-white/10 space-y-8 sm:space-y-12">
+        
+        <div class="max-w-2xl space-y-3 sm:space-y-4 text-left">
+          <span class="text-saffron-spark text-xs sm:text-sm font-semibold uppercase tracking-wider">SIMULADOR RÁPIDO</span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl heading-sm text-bone-white">
+            Monte sua proposta em segundos.
+          </h2>
+          <p class="body-muted text-sm sm:text-base">
+            Selecione os serviços desejados e envie os detalhes direto para o meu WhatsApp.
+          </p>
+        </div>
+
+        <noscript><p>Ative o JavaScript para montar a proposta ou use os links de contato pelo WhatsApp.</p></noscript>
+        <form id="calcForm" class="space-y-8 sm:space-y-10 text-left">
+          
+          <!-- Opções de Serviço -->
+          <div class="space-y-4">
+            <label class="text-xs uppercase tracking-widest text-ash-gray font-semibold block">1. Quais serviços você precisa?</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+              
+              <label class="cursor-pointer p-4 sm:p-5 rounded-24px border border-white/10 bg-void/50 hover:border-electric-iris transition-all flex items-center gap-4 has-[:checked]:border-electric-iris has-[:checked]:bg-electric-iris/10">
+                <input type="checkbox" value="Website / Landing Page" class="w-4 h-4 accent-electric-iris option-check">
+                <div>
+                  <div class="text-bone-white text-sm font-medium">Website / Landing Page</div>
+                  <div class="text-xs text-ash-gray font-light">Presença web marcante</div>
+                </div>
+              </label>
+
+              <label class="cursor-pointer p-4 sm:p-5 rounded-24px border border-white/10 bg-void/50 hover:border-electric-iris transition-all flex items-center gap-4 has-[:checked]:border-electric-iris has-[:checked]:bg-electric-iris/10">
+                <input type="checkbox" value="Aplicativo Mobile" class="w-4 h-4 accent-electric-iris option-check">
+                <div>
+                  <div class="text-bone-white text-sm font-medium">Aplicativo Mobile</div>
+                  <div class="text-xs text-ash-gray font-light">iOS e Android</div>
+                </div>
+              </label>
+
+              <label class="cursor-pointer p-4 sm:p-5 rounded-24px border border-white/10 bg-void/50 hover:border-electric-iris transition-all flex items-center gap-4 has-[:checked]:border-electric-iris has-[:checked]:bg-electric-iris/10">
+                <input type="checkbox" value="Identidade Visual / Logo" class="w-4 h-4 accent-electric-iris option-check">
+                <div>
+                  <div class="text-bone-white text-sm font-medium">Identidade Visual</div>
+                  <div class="text-xs text-ash-gray font-light">Logotipo e Branding</div>
+                </div>
+              </label>
+
+              <label class="cursor-pointer p-4 sm:p-5 rounded-24px border border-white/10 bg-void/50 hover:border-electric-iris transition-all flex items-center gap-4 has-[:checked]:border-electric-iris has-[:checked]:bg-electric-iris/10">
+                <input type="checkbox" value="Artes para Redes Sociais" class="w-4 h-4 accent-electric-iris option-check">
+                <div>
+                  <div class="text-bone-white text-sm font-medium">Artes Gráficas</div>
+                  <div class="text-xs text-ash-gray font-light">Posts, Banners, Flyers</div>
+                </div>
+              </label>
+
+              <label class="cursor-pointer p-4 sm:p-5 rounded-24px border border-white/10 bg-void/50 hover:border-electric-iris transition-all flex items-center gap-4 has-[:checked]:border-electric-iris has-[:checked]:bg-electric-iris/10">
+                <input type="checkbox" value="E-commerce Completo" class="w-4 h-4 accent-electric-iris option-check">
+                <div>
+                  <div class="text-bone-white text-sm font-medium">E-commerce</div>
+                  <div class="text-xs text-ash-gray font-light">Loja Virtual de Vendas</div>
+                </div>
+              </label>
+
+              <label class="cursor-pointer p-4 sm:p-5 rounded-24px border border-white/10 bg-void/50 hover:border-electric-iris transition-all flex items-center gap-4 has-[:checked]:border-electric-iris has-[:checked]:bg-electric-iris/10">
+                <input type="checkbox" value="UI/UX Design Protótipo" class="w-4 h-4 accent-electric-iris option-check">
+                <div>
+                  <div class="text-bone-white text-sm font-medium">UI/UX Design</div>
+                  <div class="text-xs text-ash-gray font-light">Layouts no Figma</div>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Urgência / Prazo -->
+          <div class="space-y-4">
+            <label class="text-xs uppercase tracking-widest text-ash-gray font-semibold block">2. Qual a sua prioridade de prazo?</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <label class="cursor-pointer p-3.5 sm:p-4 rounded-24px border border-white/10 bg-void/50 hover:border-electric-iris flex items-center gap-3">
+                <input type="radio" name="deadline" value="Urgente (Poucos dias)" class="accent-electric-iris" checked>
+                <span class="text-sm text-bone-white">Urgente</span>
+              </label>
+              <label class="cursor-pointer p-3.5 sm:p-4 rounded-24px border border-white/10 bg-void/50 hover:border-electric-iris flex items-center gap-3">
+                <input type="radio" name="deadline" value="Normal (2 a 4 semanas)" class="accent-electric-iris">
+                <span class="text-sm text-bone-white">Normal (2 a 4 semanas)</span>
+              </label>
+              <label class="cursor-pointer p-3.5 sm:p-4 rounded-24px border border-white/10 bg-void/50 hover:border-electric-iris flex items-center gap-3">
+                <input type="radio" name="deadline" value="Sem pressa (Apenas orçando)" class="accent-electric-iris">
+                <span class="text-sm text-bone-white">Flexível</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Botão Enviar com WhatsApp direct -->
+          <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-white/10">
+            <div class="text-sm text-silver-mist">
+              Proposta selecionada: <span id="selectedCount" role="status" aria-live="polite" class="text-saffron-spark font-semibold">0 serviço(s)</span>
+            </div>
+
+            <button type="submit" class="btn-iris w-full sm:w-auto py-4 px-8 text-sm">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              Enviar Proposta no WhatsApp
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    </main>
+    <!-- FOOTER CTA FINAL -->
+    <footer class="py-24 border-t border-white/10 space-y-16">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-8 space-y-6">
+          <h2 class="text-4xl sm:text-6xl lg:text-7xl display-title text-bone-white">
+            Vamos criar algo extraordinário juntos?
+          </h2>
+          <p class="body-light text-silver-mist max-w-xl text-lg">
+            Estou pronto para transformar sua ideia em uma experiência digital memorável. Entre em contato direto pelo WhatsApp.
+          </p>
+        </div>
+
+        <div class="lg:col-span-4 flex lg:justify-end">
+          <a href="https://wa.me/5524988038079?text=Ol%C3%A1!%20Quero%20iniciar%20um%20projeto." target="_blank" rel="noopener noreferrer" class="btn-iris text-base py-5 px-10">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            (24) 98803-8079
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-ash-gray font-light pt-8 border-t border-white/5">
+        <div>
+          &copy; <span id="year"></span> Digital Studio. Todos os direitos reservados.
+        </div>
+        <div class="flex gap-6">
+          <a href="https://wa.me/5524988038079" target="_blank" class="hover:text-saffron-spark transition-colors" rel="noopener noreferrer">WhatsApp Direct</a>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+
+
+</body>
+</html>
+
